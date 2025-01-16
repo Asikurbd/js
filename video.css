@@ -477,6 +477,7 @@ body.vjs-full-window {
 }
 
 .vjs-no-js {
+  padding: 20px;
   color: #fff;
   background-color: #000;
   font-size: 18px;
