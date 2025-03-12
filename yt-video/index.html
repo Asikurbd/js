@@ -14,6 +14,219 @@ html * {
 }
 
 </style>
+	<style id="wp-custom-css">
+			:root {
+  --pro-primary: #8750f7;
+  --pro-secondary: #2a1454;
+  --pro-accent: #0f0715;
+  --pro-white: #ffffff;
+  --pro-bg-purpal: #f6f3fc;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--pro-primary) var(--pro-secondary);
+}
+/* Home Hero Styling */
+#hero_main_img {
+  z-index: 1;
+}
+.hero_img_back_tacture {
+  animation-name: hero_img_back;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  z-index: -1;
+  position: absolute;
+}
+@keyframes hero_img_back {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.get-in-touch {
+  animation-name: get_in_touch;
+  animation-duration: 25s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+}
+@keyframes get_in_touch {
+  0% {
+    rotate: 0deg;
+    bottom: 0px;
+  }
+  50% {
+    bottom: 15px;
+  }
+  100% {
+    rotate: 360deg;
+    bottom: 0px;
+  }
+}
+.hero_title span,
+.hero_title strong {
+  color: var(--pro-primary);
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--pro-primary),
+    var(--pro-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tutor-course-topic-single-header-title {
+  margin-left: 10px;
+  width: 35%;
+}
+
+#main_menu li:last-child.current-menu-item a {
+  color: #fff;
+}
+.ast-separate-container #primary,
+.ast-separate-container.ast-left-sidebar #primary,
+.ast-separate-container.ast-right-sidebar #primary {
+  margin: 20px 0;
+}
+#secondary {
+  margin: 20px 0;
+}
+.tutor-wrap-parent {
+  padding-top: 20px;
+}
+#contact_page input,
+#contact_page textarea {
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--pro-primary) !important;
+}
+#home_tutor .tutor-container {
+  margin: 0 auto;
+}
+#home_tutor .slick-dots {
+  bottom: -45px;
+}
+#home_tutor .slick-dots li {
+  margin: 0 10px;
+}
+#home_tutor .slick-dots li.slick-active button,
+#home_tutor .slick-dots button:hover {
+  background: var(--pro-primary);
+  color: var(--pro-white);
+}
+#home_tutor .slick-dots button {
+  border: 2px solid var(--pro-primary);
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  color: var(--pro-primary);
+  transition: 0.5s;
+}
+#home_tutor .slick-dots button::before {
+  display: none;
+}
+button.tutor-btn.tutor-btn-ghost.skip-quiz-btn {
+  padding: 10px 15px !important;
+  border-radius: 5px;
+  background: var(--pro-secondary);
+}
+.plyr__menu__container .plyr__control span {
+    color: #fff;
+}
+.mce-toolbar .mce-btn i {
+    color: #fff;
+}
+h3.tutor-course-name.tutor-fs-5.tutor-fw-medium {
+    line-height: 1.5em;
+}
+.tutor-grid {
+    grid-gap: 15px;
+}
+.tutor-card-footer {
+    padding: 16px 15px;
+}
+/* YouTube Info Style */
+#response {
+  width: 98%;
+  margin: 0 auto;
+}
+#channelDetail {
+  display: flex;
+  justify-content: space-between;
+}
+#response .cards {
+  box-sizing: border-box;
+  background: var(--pro-primary);
+  background: linear-gradient(
+    -45deg,
+    var(--pro-primary) 0%,
+    var(--pro-secondary) 60%
+  );
+  border-radius: 15px;
+  flex-basis: 32.5%;
+  color: var(--pro-white);
+  padding: 40px 35px 30px;
+  position: relative;
+  font-family: 'Poppins', Sans-serif;
+}
+#response .cards i {
+  position: absolute;
+  right: 35px;
+  color: var(--pro-white);
+}
+#response .name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+#response h2.values {
+  font-family: 'Poppins', Sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--pro-white);
+}
+@media only screen and (min-width: 200px) and (max-width: 1030px) {
+  #response div.name {
+    font-size: 15px;
+    margin-top: -6px;
+  }
+  #response h2.values {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 766px) and (max-width: 841px) {
+  #response .cards {
+    padding: 40px 20px 30px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  #channelDetail {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  #response .cards {
+    flex-basis: 100%;
+    padding: 20px 20px 18px;
+    margin-bottom: 20px;
+  }
+  header.tutor-course-details-header .tutor-course-details-top .tutor-row {
+    flex-direction: column;
+  }
+}
+		</style>
 
 <title>Player</title>
 
