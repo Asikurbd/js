@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+     <title>URL Shortener</title>
+     <style>
+       body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+       input, button { padding: 10px; font-size: 16px; }
+       #result { margin-top: 20px; word-break: break-all; }
+     </style>
+   </head>
+   <body>
+     <h1>URL Shortener</h1>
+     <input type="url" id="longUrl" placeholder="Enter your long URL" style="width: 70%;">
+     <button onclick="shortenUrl()">Shorten</button>
+     <div id="result"></div>
+     
+     <script>
+       function shortenUrl() {
+         const longUrl = document.getElementById('longUrl').value;
+         if (!longUrl) return;
+         
+         // Create a simple hash of the URL
+         const hash = Math.random().toString(36).substring(2, 8);
+         const shortUrl = window.location.href + hash;
+         
+         // Store in localStorage (client-side only)
+         localStorage.setItem(hash, longUrl);
+         
+         document.getElementById('result').innerHTML = `
+           <p>Short URL: <a href="${shortUrl}" target="_blank">${shortUrl}</a></p>
+         `;
+       }
+       
+       // Check if this is a redirect request
+       const path = window.location.pathname.substring(1);
+       if (path) {
+         const longUrl = localStorage.getItem(path);
+         if (longUrl) {
+           window.location.href = longUrl;
+         }
+       }
+     </script>
+   </body>
+   </html>
