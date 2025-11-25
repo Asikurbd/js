@@ -1,0 +1,39 @@
+# Combined uBlock Origin Filter List
+# Created from multiple sources
+# Last Updated: 2024
+
+# uBlock Origin Filters
+# Source: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
+! Start of uBlock Filters
+[include]https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
+! End of uBlock Filters
+
+# uBlock Origin Badware Filters
+# Source: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
+! Start of Badware Filters
+[include]https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
+! End of Badware Filters
+
+# uBlock Origin Privacy Filters
+# Source: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
+! Start of Privacy Filters
+[include]https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
+! End of Privacy Filters
+
+# uBlock Origin Annoyances Filters
+# Source: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
+! Start of Annoyances Filters
+[include]https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
+! End of Annoyances Filters
+
+# EasyList Filters
+# Source: https://easylist-downloads.adblockplus.org/easylist.txt
+! Start of EasyList Filters
+[include]https://easylist-downloads.adblockplus.org/easylist.txt
+! End of EasyList Filters
+
+# Adguard Mobile Filters
+# Source: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt
+! Start of Adguard Mobile Filters
+[include]https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt
+! End of Adguard Mobile Filters
